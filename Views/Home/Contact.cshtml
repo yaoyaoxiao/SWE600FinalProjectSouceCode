@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+<h2>@ViewData["Title"]</h2>
+
+<div class="item active">
+    <address>
+        0000 1st North Street<br />
+        San Jose, CA 98052-6000<br />
+        <abbr title="Phone">Phone:</abbr>
+        123.456.7890
+    </address>
+
+    <address>
+        <strong>Customer Service:</strong> <a href="mailto:Support@example.com">CustomerService@bigPanda.com</a><br/>
+        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@bigpanda.com</a>
+    </address>
+
+    <h4>We want to hear from you. </h4>
+
+    <div data-state="desktop left" style="direction: ltr; text-align: left; width: 375px; position: relative; height: 238px;" data-dcf-columns="3">
+        <form role="form" aria-label="contact form" novalidate="" style="display: block;">
+            <div style="min-width: 180px; max-width: 980px; position: relative; width: 100%;">
+                <div>
+                    <input type="text" id="field1" required="" aria-invalid="false" name="Name" value="" class="style-il24ufs0_required" style="font: normal normal normal 14px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif; background-color: rgba(255, 255, 255, 1); -webkit-appearance: none; -moz-appearance: none; border: 1px solid rgba(0, 0, 0, 1); color: #B99867; margin: 0 0 5px; width: 100%;" placeholder="Name *" data-aid="nameField">
+                    <input type="text" id="field2" required="" aria-invalid="false" name="Email" value="" class="style-il24ufs0_required" style="font: normal normal normal 14px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif; background-color: rgba(255, 255, 255, 1); -webkit-appearance: none; -moz-appearance: none; border: 1px solid rgba(0, 0, 0, 1); color: #B99867; margin: 0 0 5px; width: 100%;" placeholder="Email *" data-aid="emailField">
+                </div>
+                <textarea name="Message" style="margin: 0 0 5px; width: 100%;" placeholder="Message" data-aid="messageField"></textarea>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</div>

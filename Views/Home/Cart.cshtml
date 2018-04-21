@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "_Layout2.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Cart.css"/>
+</head>
+    
+<div class="shopping-cart">
+    <!-- Title -->
+    <div class="cart-title">
+        Shopping Bag
+    </div>
+
+    <!-- Product #1 -->
+    <div class="cart-item">
+
+
+        <div class="cart-image">
+            <img src="~/images/cakePinkPanda.png" alt="" style="width: 130px; height: 130px;" />
+        </div>
+
+        <div class="cart-description">
+            <span>Pink Panda Cake</span>
+            <span>7.5 Inch</span>
+        </div>
+
+        <div class="cart-quantity">
+            <button class="plus-btn" type="button" name="button">
+                <img src="~/images/plus.png" alt="" />
+            </button>
+            <input type="text" style="width:50px; height:30px"name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+                <img src="~/images/minus.png" alt="" />
+            </button>
+        </div>
+
+        <div class="cart-total-price">$39.29</div>
+
+    </div>
+    <div id="cart-container" style="margin-left:450px; margin-top:20px">
+        <form>
+            <button formaction="/Home/Order/" id="cart-button1">
+                Continue Shopping
+            </button>
+
+            <button formaction="/Home/Checkout/" id="cart-button2">
+                Check out
+            </button>
+        </form>
+    </div>
+
+
+</div>
